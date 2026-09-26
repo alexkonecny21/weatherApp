@@ -1,0 +1,29 @@
+
+.app-loading {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.app-loading-spinner {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 3px solid var(--shadow-color-border);
+    border-top-color: var(--color-primary);
+    animation: app-loading-spin 0.7s linear infinite;
+}
+
+@keyframes app-loading-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .app-loading-spinner {
+        animation: none;
+    }
+}

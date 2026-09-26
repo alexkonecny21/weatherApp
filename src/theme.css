@@ -1,0 +1,80 @@
+:root {
+    /* PRIMARY COLORS */
+    --color-primary: oklch(62.3% 0.214 259.815);
+    --color-primary-dark: oklch(54.6% 0.245 262.881);
+    --color-primary-soft: oklch(62.078% 0.20567 259.002 / 0.181);
+    --color-primary-shadow: oklab(62.3% -0.0378409 -0.210628 / 0.3);
+
+    /* FOCUS */
+    --color-focus: #3b83f6a8;
+    --color-focus-ring: rgba(59, 130, 246, 0.15);
+
+    /* TEXT & BASIC COLORS */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-text-strong: rgba(0, 0, 0, 0.766);
+    --color-text-soft: rgba(0, 0, 0, 0.575);
+    --color-text-logo: rgb(56, 56, 56);
+    --color-placeholder: #94a3b8;
+    --color-border-input: #e5e7eb;
+    --color-cloud: #f6f3ec;
+
+    /* SHADOW COLORS */
+    --shadow-color: oklab(59.056% -0.03984 -0.22061 / 0.068);
+    --shadow-color-border: oklab(59.056% -0.03984 -0.22061 / 0.142);
+    --shadow-color-hover: oklab(59.056% -0.03984 -0.22061 / 0.15);
+    --shadow-black-faint: rgba(0, 0, 0, 0.105);
+    --shadow-black-soft: rgba(0, 0, 0, 0.1);
+
+    /* SHADOW SETS */
+    --shadow-panel:
+        var(--shadow-color) 7px 3px 15px -3px,
+        var(--shadow-color) 7px 4px 6px -4px;
+
+    --shadow-card:
+        var(--shadow-color) 7px 10px 15px -3px,
+        var(--shadow-color) 7px 4px 6px -4px;
+
+    --shadow-hover:
+        var(--shadow-color-hover) 2px 10px 15px -3px,
+        var(--shadow-color-hover) 2px 4px 6px -4px;
+
+    --shadow-logo:
+        var(--color-primary-shadow) 0px 10px 15px -3px,
+        var(--color-primary-shadow) 0px 4px 6px -4px;
+
+    /* BACKGROUND OVERLAYS */
+    --bg-overlay-1: oklab(0.623 -0.02 -0.11 / 0.18);
+    --bg-overlay-2: oklab(0.623 -0.02 -0.11 / 0.1);
+    --bg-overlay-3: oklab(0.623 -0.02 -0.11 / 0.04);
+
+    /* FONTS */
+    --font-body: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: "Fraunces", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    /* RADII */
+    --radius-input: 15px;
+    --radius-logo: 1rem;
+    --radius-panel: 45px;
+    --radius-card: 30px;
+
+    /* LAYOUT */
+    --container-margin: 6%;
+    --container-padding: 2%;
+
+    /* MESSAGE TOAST */
+    --bg: #f5f3ef;
+    --panel: #ffffff;
+    --border: #e7e4de;
+    --text: #1f2320;
+    --muted: #7a7f78;
+    --green: #1f6b4a;
+    --green-light: #e7f3ec;
+    --green-dark: #17513a;
+    --danger: #d1483f;
+    --danger-bg: #fdecec;
+    --danger-border: #f4c8c4;
+    --radius-lg: 16px;
+    --radius-md: 10px;
+    --radius-sm: 8px;
+}

@@ -1,0 +1,58 @@
+
+.hourly-forecast-cards {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 4px 0;
+}
+
+.hourly-forecast-cards .hourly-card {
+    flex: 0 0 auto;
+    width: 100px;
+}
+
+.hourly-forecast-cards::-webkit-scrollbar {
+    height: 6px;
+}
+
+.hourly-forecast-cards::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.hourly-forecast-cards::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.hourly-card {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--shadow-color-border);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hourly-card-img {
+    margin-top: 15px;
+}
+
+.hourly-card-img img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hourly-temperatures {
+    margin-top: 10px;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+}

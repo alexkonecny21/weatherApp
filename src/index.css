@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+@import "./theme.css";
+@import "./css/cityInputSection.css";
+@import "./css/currentWeather.css";
+@import "./css/dailyForecast.css";
+@import "./css/gpsPanel.css";
+@import "./css/hourlyForecast.css";
+@import "./css/loadingSpinner.css";
+@import "./css/sectionDivider.css";
+
+@layer base {
+    #root {
+        width: 100vw;
+        height: 100vh;
+        font-family: var(--font-body);
+    }
+
+    :where(*) {
+        box-sizing: border-box;
+        font-family: var(--font-body);
+        margin: 0;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(to right,
+                var(--bg-overlay-1) 0%,
+                var(--bg-overlay-2) 35%,
+                var(--bg-overlay-3) 70%,
+                transparent 100%);
+
+        position: relative;
+        overflow-x: hidden;
+        touch-action: manipulation;
+    }
+}
+
+.weather-app {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    margin: 0 var(--container-margin);
+    padding: 32px var(--container-padding);
+    padding-top: 16px;
+}
+
+@media (max-width: 1024px) {
+    main {
+        margin: 0 4%;
+    }
+}
+
+@media (max-width: 925px) {
+    main {
+        padding-top: 10px;
+    }
+}
