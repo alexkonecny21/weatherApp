@@ -1,6 +1,6 @@
 # Weather App
 
-A modern weather application that provides current weather conditions, hourly and daily forecasts, activity-based weather recommendations, and  city search suggestions.
+A modern weather application that provides current weather conditions, hourly and daily forecasts, activity-based weather recommendations, and city search suggestions.
 
 ## Features
 
@@ -33,12 +33,20 @@ A modern weather application that provides current weather conditions, hourly an
   * Autocomplete search suggestions
   * Select a location from suggested results
 
+## Screenshots
+
+<p align="left">
+  <img src="./readme-images/MobileView.png" alt="Desktop view" width="25%">
+  <img src="./readme-images/DesktopView.png" alt="Mobile view" width="70%">
+</p>
+
+
 
 ## Tech Stack
 
 * **Frontend:** React / Next.js
 * **Language:** JavaScript
-* **Styling:** CSS 
+* **Styling:** CSS
 * **Weather API:** OpenMeteo Weather API
 * **Geocoding:** Open-Meteo Geocoding API & BigDataCloud Reverse Geocoding API
 * **Deployment:** Vercel
@@ -51,18 +59,18 @@ Make sure you have the following installed:
 
 * Node.js 18+
 * npm
-* An Reverse Geocoding API key from https://www.bigdatacloud.com/reverse-geocoding
+* A Reverse Geocoding API key from [BigDataCloud](https://www.bigdatacloud.com/reverse-geocoding)
 
 ### Installation
 
-Clone the repository:
+**Clone the repository:**
 
 ```bash
 git clone https://github.com/alexkonecny21/weatherApp.git
 cd weatherApp
 ```
 
-Install dependencies:
+**Install dependencies:**
 
 ```bash
 npm install
@@ -90,7 +98,7 @@ Open the application at the local URL shown in your terminal.
 npm run build
 ```
 
-Preview the production build:
+**Preview the production build:**
 
 ```bash
 npm run preview
@@ -113,4 +121,3 @@ The application should work across:
 * 📱 Tablets
 * 💻 Laptops
 * 🖥️ Desktop screens
-
