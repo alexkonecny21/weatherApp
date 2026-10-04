@@ -1,7 +1,5 @@
 import MessageToast from "../components/MessageToast";
 
-const reverseGeocodingAPI = import.meta.env.VITE_REVERSE_GEOCODING_API_KEY;
-
 // fetch weather data
 export const getWeatherDataByCity = async (city) => {
     try{
@@ -87,7 +85,7 @@ export async function geocodeCity(city) {
 async function geocodeCoordinates(lat, lon, lang = "en") {
     try {
         const response = await fetch(
-            `https://api-bdc.net/data/reverse-geocode-with-timezone?latitude=${lat}&longitude=${lon}&localityLanguage=${lang}&key=${reverseGeocodingAPI}`
+            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=${lang}`
         );
 
         if (!response.ok) {
@@ -97,7 +95,7 @@ async function geocodeCoordinates(lat, lon, lang = "en") {
         const data = await response.json();
 
         return {
-            name: data.locality || "Current Location",
+            name: data.locality || data.city || "Current Location",
             country_code: data.countryCode || "",
         };
     } catch (error) {
