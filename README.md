@@ -2,45 +2,12 @@
 
 A modern weather application that provides current weather conditions, hourly and daily forecasts, activity-based weather recommendations, and city search suggestions.
 
-## Features
-
-* 🌤️ **Current Weather**
-
-  * Current temperature
-  * Weather condition
-  * Humidity
-  * Wind speed
-  * Visibility
-
-* 🕐 **Hourly Forecast**
-
-  * 24-Hour weather forecast
-  * Temperature
-
-* 📅 **Daily Forecast**
-
-  * Multi-day weather forecast
-  * Daily high and low temperatures
-  * Precipitation probability
-
-* 🏃 **Activity Conditions**
-
-  * Weather-based activity recommendations
-
-* 🔎 **City Search**
-
-  * Search for cities and locations
-  * Autocomplete search suggestions
-  * Select a location from suggested results
-
 ## Screenshots
 
 <p align="left">
   <img src="./readme-images/MobileView.png" alt="Desktop view" width="25%">
   <img src="./readme-images/DesktopView.png" alt="Mobile view" width="70%">
 </p>
-
-
 
 ## Tech Stack
 
@@ -104,20 +71,10 @@ npm run build
 npm run preview
 ```
 
-## Error Handling
-
-The application should handle common failure scenarios, including:
-
-* City not found
-* No search results
-* Network connection failure
-* Missing or incomplete weather data
-
 ## Responsive Design
 
 The application should work across:
 
 * 📱 Mobile devices
-* 📱 Tablets
-* 💻 Laptops
+* 💻 Laptops & Tablets
 * 🖥️ Desktop screens
