@@ -5,15 +5,15 @@ A modern weather application that provides current weather conditions, hourly an
 ## Screenshots
 
 <p align="left">
-  <img src="./readme-images/MobileView.png" alt="Desktop view" width="25%">
-  <img src="./readme-images/DesktopView.png" alt="Mobile view" width="70%">
+  <img src="./readme-images/MobileView.png" alt="Mobile view" width="25%">
+  <img src="./readme-images/DesktopView.png" alt="Desktop view" width="70%">
 </p>
 
 ## Tech Stack
 
-* **Frontend:** React / Next.js
+* **Frontend:** Vite, React, HeroUI
 * **Language:** JavaScript
-* **Styling:** CSS
+* **Styling:** CSS, Tailwind CSS
 * **Weather API:** OpenMeteo Weather API
 * **Geocoding:** Open-Meteo Geocoding API & BigDataCloud Reverse Geocoding API
 * **Deployment:** Vercel
