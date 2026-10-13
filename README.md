@@ -1,6 +1,6 @@
 # Weather App
 
-A modern weather application that provides current weather conditions, hourly and daily forecasts, activity-based weather recommendations, and city search suggestions.
+A modern weather application that provides current weather conditions, hourly and daily forecasts, activity-based weather recommendations, city search suggestions, and a quick-access list of recent cities.
 
 ## Screenshots
 
