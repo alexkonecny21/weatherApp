@@ -31,10 +31,12 @@ export default function WeatherApp() {
       
       const data = await getWeatherDataByCity(city);
 
-      setApiData(data);
-      setCity(city);        // keep the input in sync when a chip is clicked
-      setActiveCity(city);  // highlighted chip
-      addCity(city);        // save to recent cities
+      if(data){
+        setApiData(data);
+        setCity(city);       
+        setActiveCity(city);  
+        addCity(city); 
+      }
     }catch(e){
       console.log(e);
     }finally{
