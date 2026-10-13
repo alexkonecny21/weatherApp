@@ -24,9 +24,8 @@ A modern weather application that provides current weather conditions, hourly an
 
 Make sure you have the following installed:
 
-* Node.js 18+
+* Node.js 20.19+ (or 22.12+)
 * npm
-* A Reverse Geocoding API key from [BigDataCloud](https://www.bigdatacloud.com/reverse-geocoding)
 
 ### Installation
 
@@ -41,14 +40,6 @@ cd weatherApp
 
 ```bash
 npm install
-```
-
-### Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-VITE_REVERSE_GEOCODING_API_KEY=your_api_key_here
 ```
 
 ### Run the Development Server
