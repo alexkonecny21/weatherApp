@@ -5,6 +5,7 @@
     flex: 1;
     margin: 0 var(--container-margin);
     padding: 32px var(--container-padding);
+    padding-bottom: 17px;
     gap: 15px;
 }
 

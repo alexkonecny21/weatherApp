@@ -33,8 +33,10 @@
     }
 
     svg {
-        margin-top: 2px;
+        margin-top: 5px;
         color: var(--color-primary);
+        min-width: 20px;
+        min-height: 20px;
     }
 }
 
@@ -167,10 +169,6 @@
         justify-content: center;
     }
 
-    .city-current-weather svg {
-        margin-top: 3px;
-    }
-
     .current-weather-cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
@@ -197,7 +195,7 @@
     }
 
     .city-current-weather svg {
-        margin-top: 0;
+        margin-top: 6px;
     }
 
     .current-weather-cards {

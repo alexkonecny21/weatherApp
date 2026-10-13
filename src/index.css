@@ -8,6 +8,7 @@
 @import "./css/hourlyForecast.css";
 @import "./css/loadingSpinner.css";
 @import "./css/sectionDivider.css";
+@import "./css/recentCities.css";
 
 @layer base {
     #root {

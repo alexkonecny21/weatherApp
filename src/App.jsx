@@ -12,6 +12,7 @@ import CurrentWeatherSection from "./components/CurrentWeather/CurrentWeatherSec
 import ForecastSection from "./components/DailyForecast/ForecastSection";
 import GpsCard from "./components/GpsCard";
 import { Toast } from "@heroui/react";
+import RecentCities, { useRecentCities } from "./components/RecentCities/RecentCities";
 
 export default function WeatherApp() {
   const [city, setCity] = useState("");
@@ -19,6 +20,9 @@ export default function WeatherApp() {
   const [isLoading, setIsLoading] = useState(false);
   const [isInputDisabled, setIsInputDisabled] = useState(false);
   const [currentUnit, setCurrentUnit] = useState(() => localStorage.getItem("weatherUnit") || "C");
+
+  const [activeCity, setActiveCity] = useState("");
+  const { cities, addCity, removeCity } = useRecentCities();
 
   const handleCitySubmit = async (city) => {
     try{
@@ -28,6 +32,9 @@ export default function WeatherApp() {
       const data = await getWeatherDataByCity(city);
 
       setApiData(data);
+      setCity(city);        // keep the input in sync when a chip is clicked
+      setActiveCity(city);  // highlighted chip
+      addCity(city);        // save to recent cities
     }catch(e){
       console.log(e);
     }finally{
@@ -104,6 +111,12 @@ export default function WeatherApp() {
       </form>
 
       <main>
+        <RecentCities
+          cities={cities}
+          currentCity={activeCity}
+          onSelect={handleCitySubmit}
+          onRemove={removeCity}
+        />
         {isLoading === true ? (
           <LoadingSpinner />
         ): apiData === null ? (
